@@ -29,6 +29,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
+import { METHODS } from "http";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -118,8 +119,11 @@ function RegistrationForm() {
     setButtonLoading(true);
 
     try {
+      // const response = await fetch("http://localhost:8000/api/add",{
+      
+      // })
       const response = await axios.post(
-        "http://localhost:8000/api/add"
+        "https://aluminibackend-ijym.onrender.com/api/adds"
         // 'https://api.jitalumni.site/api/add'
         , values);
   

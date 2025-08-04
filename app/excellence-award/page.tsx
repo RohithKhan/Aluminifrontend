@@ -253,7 +253,7 @@ export default function ExcellenceAwardPage() {
   
       const response = await axios.post(
         // 'http://localhost:8000/api/addAward'
-        "https://api.jitalumni.site/api/addAward"
+        "https://aluminibackend-ijym.onrender.com/api/addAward"
         , formData, {
           headers: {
               "Content-Type": "multipart/form-data",
